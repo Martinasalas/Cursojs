@@ -1,15 +1,15 @@
+function calculoimc(){
 
-let ingreseAnioNacimiento = prompt ("Ingresa tu anio de nacimiento");
-const anioActual = 2022;
-let anioNacimiento = (anioActual - ingreseAnioNacimiento);
-   
-while (ingreseAnioNacimiento == "") {
-   alert ("debes ingresar un anio para seguir")
-   ingreseAnioNacimiento = prompt ("Ingresa tu anio de nacimiento")
-} 
-if  (anioNacimiento >= 18 ) {
-   alert ("Felicitaciones! podes navegar en nuestro sitio");
+let peso = prompt ("Ingresa tu peso actual en KG");
+let altura = prompt ("Ingresa tu altura en METROS");
+const altura2 = altura*altura 
+
+const imcfinal = peso / altura2 
+alert('tu IMC es igual a ' + imcfinal)
+
+
 }
-   else{ 
-      alert ("Lo sentimos! necesitas ser mayor de edad para navegar en nuestro sitio");
-   }
+
+
+calculoimc ()
+
